@@ -1,0 +1,151 @@
+
+/* NOVA AUTH - Independent Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body:has(.nova-auth-page) {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    background: #111126 !important;
+    font-family: Tahoma, Arial, sans-serif !important;
+}
+
+.nova-auth-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 16px;
+    background:
+        radial-gradient(ellipse at 15% 10%, rgba(110, 87, 255, .25), transparent 45%),
+        radial-gradient(ellipse at 90% 90%, rgba(60, 120, 255, .15), transparent 40%),
+        #111126;
+    direction: rtl;
+}
+
+.nova-auth-page .nova-logo {
+    display: block;
+    margin-bottom: 25px;
+    color: #9585ff;
+    font-size: 38px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nova-auth-page .nova-auth-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 38px 35px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.nova-auth-card h1 {
+    color: #19182f;
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+
+.nova-auth-card .nova-subtitle {
+    color: #85859a;
+    font-size: 13px;
+    line-height: 2;
+    margin: 0 0 15px;
+}
+
+.nova-auth-card label {
+    color: #33334a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.nova-auth-card input:not([type="hidden"]) {
+    display: block;
+    width: 100%;
+    height: 49px;
+    padding: 0 14px;
+    margin: 0;
+    border: 1px solid #e2e2ed;
+    border-radius: 10px;
+    outline: none;
+    background: #f9f9fc;
+    color: #222;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.nova-auth-card input:focus {
+    border-color: #7562ed;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(117, 98, 237, .12);
+}
+
+.nova-auth-card button.nova-submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #7965f0, #5945d0);
+    color: white;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.nova-auth-card button.nova-submit:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+}
+
+.nova-auth-card .nova-error {
+    padding: 12px;
+    border-radius: 9px;
+    background: #fff0f0;
+    border: 1px solid #ffd6d6;
+    color: #c62828;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.nova-auth-card .nova-switch {
+    text-align: center;
+    color: #77778b;
+    font-size: 13px;
+    margin: 14px 0 0;
+}
+
+.nova-auth-card .nova-switch a {
+    color: #6552d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nova-auth-card .nova-switch a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+    .nova-auth-page .nova-auth-card {
+        padding: 28px 21px;
+    }
+
+    .nova-auth-card h1 {
+        font-size: 22px;
+    }
+}
